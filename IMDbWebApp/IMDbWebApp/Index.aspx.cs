@@ -9,6 +9,11 @@ namespace IMDbWebApp
 {
     public partial class Index : System.Web.UI.Page
     {
+        /// <summary>
+        /// Haalt de 2 best gewaardeerde films op en laat ze zien via de user control movieViewerForMovies
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Home | IMDb";
