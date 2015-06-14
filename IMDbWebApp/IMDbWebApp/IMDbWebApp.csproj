@@ -60,8 +60,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Errorpage.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="LogIn.aspx" />
+    <Content Include="Movie.aspx" />
     <Content Include="Movies.aspx" />
     <Content Include="movieViewerForMovies.ascx" />
     <Content Include="Web.config" />
@@ -76,6 +78,13 @@
       <DependentUpon>Basic.Master</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
+    <Compile Include="Errorpage.aspx.cs">
+      <DependentUpon>Errorpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errorpage.aspx.designer.cs">
+      <DependentUpon>Errorpage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -89,6 +98,13 @@
     </Compile>
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movie.aspx.cs">
+      <DependentUpon>Movie.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movie.aspx.designer.cs">
+      <DependentUpon>Movie.aspx</DependentUpon>
     </Compile>
     <Compile Include="Movies.aspx.cs">
       <DependentUpon>Movies.aspx</DependentUpon>

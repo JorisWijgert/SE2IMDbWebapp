@@ -25,7 +25,7 @@ namespace IMDbWebApp
             movCTitle.InnerText = Title;
             movCAbout.InnerText = AboutMovie;
             movCGrade.InnerText = Grade;
-            movContainLink.HRef = "?movid=" + VideoId;
+            movContainLink.HRef = "movie.aspx?movid=" + VideoId;
         }
     }
 }
