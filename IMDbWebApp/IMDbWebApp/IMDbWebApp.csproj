@@ -42,6 +42,7 @@
     <Reference Include="Oracle.ManagedDataAccess">
       <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.021\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -60,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="castViewerForMovies.ascx" />
     <Content Include="Errorpage.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="LogIn.aspx" />
@@ -76,6 +78,13 @@
     </Compile>
     <Compile Include="Basic.Master.designer.cs">
       <DependentUpon>Basic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="castViewerForMovies.ascx.cs">
+      <DependentUpon>castViewerForMovies.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="castViewerForMovies.ascx.designer.cs">
+      <DependentUpon>castViewerForMovies.ascx</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Errorpage.aspx.cs">

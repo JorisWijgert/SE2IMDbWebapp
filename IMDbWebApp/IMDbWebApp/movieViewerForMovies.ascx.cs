@@ -7,13 +7,15 @@ using System.Web.UI.WebControls;
 
 namespace IMDbWebApp
 {
+    //Hulpbron: code van Rick
+
     public partial class movieViewerForMovies : System.Web.UI.UserControl
     {
-        public String Title { get; set; }
-        public String ImageLoc { get; set; }
-        public String AboutMovie { get; set; }
-        public String Grade { get; set; }
-        public String VideoId { get; set; }
+        public string Title { get; set; }
+        public string ImageLoc { get; set; }
+        public string AboutMovie { get; set; }
+        public string Grade { get; set; }
+        public string VideoId { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             
