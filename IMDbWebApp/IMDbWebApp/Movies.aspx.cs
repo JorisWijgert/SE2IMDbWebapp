@@ -9,6 +9,11 @@ namespace IMDbWebApp
 {
     public partial class Movies : System.Web.UI.Page
     {
+        /// <summary>
+        /// Maakt een lijst van alle films op alfabet gesorteerd
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.Title = "Films | IMDb";

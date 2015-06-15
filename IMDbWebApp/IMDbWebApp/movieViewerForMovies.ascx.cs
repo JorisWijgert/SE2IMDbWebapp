@@ -8,7 +8,9 @@ using System.Web.UI.WebControls;
 namespace IMDbWebApp
 {
     //Hulpbron: code van Rick
-
+    /// <summary>
+    /// Zorgt ervoor dat de user control gevuld wordt met data van een film
+    /// </summary>
     public partial class movieViewerForMovies : System.Web.UI.UserControl
     {
         public string Title { get; set; }

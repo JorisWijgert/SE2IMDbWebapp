@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Basic.master.cs" Inherits="IMDbWebApp.Basic" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="menubar" runat="server">
+            <ul id="menuitems" runat="server">
+                <li><a href="Index.aspx">Home</a></li>
+                <li><a href="Movies.aspx">Films</a></li>
+                <li>Series</li>
+                <li><a href="LogIn.aspx" id="loginuit" runat="server">LogIn</a></li>
+            </ul>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="Body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="BottomLine">
+            Deze site heeft geen connecties met <a href="http://imdb.com/">IMDb.com</a>. 
+        </div>
+    </form>
+</body>
+</html>
