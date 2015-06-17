@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Body" runat="server">
     <div id="fields" runat="server">
-        Alle velden zijn verplicht!
+        <p>Alle velden zijn verplicht!</p>
         <asp:Label ID="lblFirstName" AssociatedControlID="tbFirstName" runat="server" Text="Voornaam"></asp:Label>
         <asp:TextBox ID="tbFirstName" runat="server"></asp:TextBox>
         <asp:Label ID="lblLastName" AssociatedControlID="tbLastName" runat="server" Text="Achternaam"></asp:Label>

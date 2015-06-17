@@ -14,6 +14,6 @@
         <asp:TextBox ID="tbPassword" runat="server" type="password"></asp:TextBox>
         <asp:Button ID="btnLogin" runat="server" Text="Inloggen" OnClick="btnLogin_Click" />
         <asp:Label ID="lblResult" runat="server" Text="Resultaat"></asp:Label>
-        Nog geen account? U kunt <a href="Registrate.aspx">hier</a> registreren!
+        <p>Nog geen account? U kunt <a href="Registrate.aspx">hier</a> registreren!</p>
     </div>
 </asp:Content>

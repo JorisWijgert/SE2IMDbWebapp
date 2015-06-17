@@ -11,21 +11,23 @@
     <asp:Panel ID="pnlMovieInfo" runat="server" Visible="false">
         <asp:Label ID="lblTitle" runat="server" Text="Film"></asp:Label>
         <asp:Image ID="imgCover" runat="server" />
-        Lengte:
-        <asp:Label ID="lblLength" runat="server" Text="Lengte"></asp:Label>
-        Releasedatum:
-        <asp:Label ID="lblRlsDate" runat="server" Text="Releasedatum"></asp:Label>
-        Gemiddeld cijfer:
-        <asp:Label ID="lblGrade" runat="server" Text="Cijfer"></asp:Label>
-        Samenvatting:
-        <asp:Label ID="lblSummary" runat="server" Text="Samenvatting"></asp:Label>
-        Genre:
-        <asp:Label ID="lblGenre" runat="server" Text="Genre"></asp:Label>
+        <div id="pnlMovieInfoExtraInfo">
+            <p>Lengte:</p>
+            <asp:Label ID="lblLength" runat="server" Text="Lengte"></asp:Label>
+            <p>Releasedatum:</p>
+            <asp:Label ID="lblRlsDate" runat="server" Text="Releasedatum"></asp:Label>
+            <p>Gemiddeld cijfer:</p>
+            <asp:Label ID="lblGrade" runat="server" Text="Cijfer"></asp:Label>
+            <p>Samenvatting:</p>
+            <asp:Label ID="lblSummary" runat="server" Text="Samenvatting"></asp:Label>
+            <p>Genre:</p>
+            <asp:Label ID="lblGenre" runat="server" Text="Genre"></asp:Label>
+        </div>
     </asp:Panel>
     <asp:Panel ID="pnlUserActions" runat="server" Visible="false">
         <asp:Button ID="btnListAddRmv" runat="server" Text="Toevoegen aan lijst" OnClick="btnListAddRmv_Click" />
-        Geef een cijfer aan deze film:
-        <asp:RadioButtonList ID="rblGrade" runat="server" >
+        <p>Geef een cijfer aan deze film:</p>
+        <asp:RadioButtonList ID="rblGrade" runat="server">
             <asp:ListItem Text="1" Value="1" />
             <asp:ListItem Text="2" Value="2" />
             <asp:ListItem Text="3" Value="3" />
@@ -41,11 +43,11 @@
         <asp:Label ID="lblSelectAValue" runat="server" Text="Selecteer eerst een cijfer" Visible="false"></asp:Label>
     </asp:Panel>
     <asp:Panel ID="pnlSequel" runat="server" Visible="false">
-        Vervolgfilm:
+        <p>Vervolgfilm:</p>
         <!-- hier komt de user control MovieViewer -->
     </asp:Panel>
     <asp:Panel ID="pnlCastActor" runat="server" Visible="false">
-        De cast en acteurs
+        <p>De cast en acteurs</p>
         <!-- hier komt de user control CastViewer -->
     </asp:Panel>
 </asp:Content>
